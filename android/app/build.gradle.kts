@@ -62,6 +62,7 @@ android {
     assetPacks += mutableSetOf(":qnn_pack", ":sd_pack")
 
     buildTypes {
+        debug { applicationIdSuffix = ".dev" }
         release {
             // Enable R8 code shrinking and obfuscation to meet Google Play's 25% threshold
             isMinifyEnabled = true
